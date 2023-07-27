@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+{%extends 'base.html'%}
+{%block body_block%}
+<form action="/" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button>
+            Save!
+        </button>
+    </form>
+{%endblock%}
