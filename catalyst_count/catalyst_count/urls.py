@@ -23,5 +23,6 @@ urlpatterns = [
     path('', views.home),
     path('upload/', views.upload_view),
     path('Query_builder',views.Query_builder),
-    path('accounts/', include('django.contrib.auth.urls'))
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('api/',include('catalystapp.api.urls')),
 ]

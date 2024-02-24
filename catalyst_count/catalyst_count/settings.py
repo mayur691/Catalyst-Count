@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'catalystapp',
     'bootstrap5',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
