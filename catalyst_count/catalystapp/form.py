@@ -1,7 +1,14 @@
-from django.forms import ModelForm
-from .models import Upload
+from django import forms
+from .models import Upload,Employee
 
-class UploadForm(ModelForm):
+class EmployeeForm(forms.ModelForm):
+    class Meta:
+        model=Employee
+        fields = "__all__"
+
+
+
+class CSVImportForm(forms.ModelForm):
     class Meta:
         model = Upload
         fields = '__all__'
